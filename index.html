@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=640,user-scalable=no"/>
+		<script type="text/javascript" src="js/tools.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/welcome.css"/>
+		<title>welcome</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//设置body的宽高为手机可视区的宽高，后面子级继承body的宽高
+			var body = document.getElementsByTagName('body')[0];
+			body.style.width = view().w + 'px';
+			body.style.height = view().h + 'px';
+		</script>
+		<!--1-->
+		<section class="page showPage" id="index">
+			<section class="run">
+				<img src="img/tree.jpg"/>
+				<section class="title">
+					<img src="img/title.png"/>
+					<span></span>
+				</section>
+				<img src="img/title2.png"/>
+				<span></span>
+				<span></span>
+				<span></span>
+			</section>
+			<h1>
+				<img src="img/logo.png"/>
+			</h1>
+		</section>
+		<!--2-->
+		<section class="page" id="index2">
+			<section class="banner">
+				<ul>
+					<li><img src="img/1.jpg"/></li>
+					<li><img src="img/2.jpg"/></li>
+					<li><img src="img/3.jpg"/></li>
+					<li><img src="img/4.jpg"/></li>
+					<li><img src="img/5.jpg"/></li>
+				</ul>
+				<nav>
+					<p>成都九寨沟景区</p>
+					<section class="nav">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</section>
+				</nav>
+			</section>
+			<section class="content">
+				<section class="score">
+					<h3>给景区评分</h3>
+					<ul>
+						<li>
+							<span>综合印象</span>
+							<nav>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+							</nav>
+							<!--input【type="hidden"】用于记录数据-->
+							<input type="hidden" value="0"/>
+						</li>
+						<li>
+							<span>服务指数</span>
+							<nav>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+							</nav>
+							<input type="hidden" value="0"/>
+						</li>
+						<li>
+							<span>消费指数</span>
+							<nav>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+							</nav>
+							<input type="hidden" value="0"/>
+						</li>
+					</ul>
+				</section>
+				<section class="tag">
+					<h3>给景区添加标签</h3>
+					<section class="tagInfo">
+						<label>
+							<input type="radio" value="服务好" name="tag"/>
+							<span>服务好</span>
+						</label>
+						<label>
+							<input type="radio" value="景色赞" name="tag"/>
+							<span>景色赞</span>
+						</label>
+						<label>
+							<input type="radio" value="千篇一律" name="tag"/>
+							<span>千篇一律</span>
+						</label>
+						<label>
+							<input type="radio" value="看人海好" name="tag"/>
+							<span>看人海</span>
+						</label>
+						<label>
+							<input type="radio" value="挤爆了" name="tag"/>
+							<span>挤爆了</span>
+						</label>
+						<label>
+							<input type="radio" value="服务好" name="tag"/>
+							<span>服务好</span>
+						</label>
+						<label>
+							<input type="radio" value="景色赞" name="tag"/>
+							<span>景色赞</span>
+						</label>
+						<label>
+							<input type="radio" value="千篇一律" name="tag"/>
+							<span>千篇一律</span>
+						</label>
+						<label>
+							<input type="radio" value="看人海" name="tag"/>
+							<span>看人海</span>
+						</label>
+						<label>
+							<input type="radio" value="挤爆了" name="tag"/>
+							<span>挤爆了</span>
+						</label>
+					</section>
+				</section>
+			</section>
+			<p class="info">请平分</p>
+			<input type="button" value="提交" class="btn"/>
+		</section>
+		<!--3-->
+		<section class="page" id="index3"></section>
+		<!--4-->
+		<section class="page" id="index4">
+			<section class="news">
+				<img src="img/news.png"/>
+			</section>
+			<section class="upLoad">
+				<h3>
+					请上传旅游投诉以及突发事件线索
+				</h3>
+				<section>
+					<label>
+						<span>导入视频</span>
+						<input type="file" />
+					</label>
+					<label>
+						<span>上传照片</span>
+						<input type="file" />
+					</label>
+				</section>
+			</section>
+			<input type="button" value="提交" class="btn"/>
+		</section>
+		<!--5-->
+		<section class="page" id="index5">
+			<section class="videoType">
+				<h3>给视频或照片添加标签</h3>
+				<section class="videoTags">
+					<label>
+						<input type="radio" value="点赞" name="videoTags"/>
+						<span>点赞</span>
+					</label>
+					<label>
+						<input type="radio" value="吐槽" name="videoTags"/>
+						<span>吐槽</span>
+					</label>
+					<label>
+						<input type="radio" value="投诉" name="videoTags"/>
+						<span>投诉</span>
+					</label>
+					<label>
+						<input type="radio" value="表扬" name="videoTags"/>
+						<span>表扬</span>
+					</label>
+					<label>
+						<input type="radio" value="弱爆了" name="videoTags"/>
+						<span>弱爆了</span>
+					</label>
+					<label>
+						<input type="radio" value="给力" name="videoTags"/>
+						<span>给力</span>
+					</label>
+					<label>
+						<input type="radio" value="分享" name="videoTags"/>
+						<span>分享</span>
+					</label>
+					<label>
+						<input type="radio" value="感动" name="videoTags"/>
+						<span>感动</span>
+					</label>
+					<label>
+						<input type="radio" value="气愤" name="videoTags"/>
+						<span>气愤</span>
+					</label>
+					<label>
+						<input type="radio" value="开心" name="videoTags"/>
+						<span>开心</span>
+					</label>
+					<label>
+						<input type="radio" value="抓拍" name="videoTags"/>
+						<span>抓拍</span>
+					</label>
+					<label>
+						<input type="radio" value="惊喜" name="videoTags"/>
+						<span>惊喜</span>
+					</label>
+				</section>
+			</section>
+			<p>
+				<textarea placeholder="(填选:说点什么(可选))"></textarea>
+				<input type="text" placeholder="(填选:说点什么(可选))"/>
+			</p>
+			<input type="button" value="提交" class="btn submit"/>
+		</section>
+		<!--6-->
+		<section class="page" id="index6">
+			<section class="run">
+				<img src="img/tree.jpg"/>
+				<section class="title">
+					<img src="img/tranks2.png"/>
+					<span></span>
+				</section>
+				<span></span>
+				<span></span>
+				<span></span>
+			</section>
+			<input type="button" value="重新评价" class="btn submit"/>
+		</section>
+		<script src="js/welcome.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			indexFn()
+
+		</script>
+	</body>
+</html>
